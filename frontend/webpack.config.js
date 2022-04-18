@@ -5,7 +5,7 @@ const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const GLOBALS = {
-  'process.env.ENDPOINT': JSON.stringify(process.env.ENDPOINT || 'http://0.0.0.0:9000/api'),
+  'process.env.ENDPOINT': JSON.stringify(process.env.ENDPOINT || 'http://localhost:9000/api'),
 };
 
 module.exports = {
@@ -26,6 +26,7 @@ module.exports = {
     contentBase: 'src/public',
     historyApiFallback: true,
     disableHostCheck: true,
+    hot: true,
     host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT || 8000,
   },
@@ -58,7 +59,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new TransferWebpackPlugin([{ from: 'src/public' }], '.'),
+    //new TransferWebpackPlugin([{ from: 'src/public' }], '.'),
     new webpack.DefinePlugin(GLOBALS),
   ],
 };

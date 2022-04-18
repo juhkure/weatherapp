@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "first copy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhkure/weatherapp.git"
+  },
+  "author": "juhkure",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juhkure/weatherapp/issues"
+  },
+  "homepage": "https://github.com/juhkure/weatherapp#readme"
+}
