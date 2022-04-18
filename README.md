@@ -4,6 +4,10 @@ Typing `docker-compose up --build` in the root directory will setup the applicat
 
 Both front- and backend can be ran separately both in and outside of a container from their respective directories. Commands for those are found further down.
 
+## Api key
+
+The application supposedly uses an api key from the environment variables. If such key is not found, it'll use my own key.
+
 # Weatherapp
 
 There was a beautiful idea of building an app that would show the upcoming weather. The developers wrote a nice backend and a frontend following the latest principles and - to be honest - bells and whistles. However, the developers did not remember to add any information about the infrastructure or even setup instructions in the source code.
