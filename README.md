@@ -1,3 +1,9 @@
+#Running the app in a container
+
+Typing `docker-compose up --build` in the root directory will setup the application to run in your local environment. Backend can be found from [localhost port 9000](http://localhost:9000/api/weather) and the frontend can be viewed at [localhost port 8000](http://localhost:8000/)
+
+Both front- and backend can be ran separately both in and outside of a container from their respective directories. Commands for those are found further down.
+
 # Weatherapp
 
 There was a beautiful idea of building an app that would show the upcoming weather. The developers wrote a nice backend and a frontend following the latest principles and - to be honest - bells and whistles. However, the developers did not remember to add any information about the infrastructure or even setup instructions in the source code.
